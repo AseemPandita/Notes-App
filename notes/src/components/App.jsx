@@ -1,36 +1,27 @@
 import React, { useState } from "react";
 import Header from "./Header";
-import Note from "./Note";
+import Search from "./SearchBar";
 import Footer from "./Footer";
-import NotesData from "../notesData";
+import Results from "./Results";
 
 
 
 function App(){
 
-    const [searchTerm, getSearchTerm] = useState("");
-    
-function filterResult(event){
-    getSearchTerm(event.target.value);
-}
+    const [searchTerm, setSearchTerm] = useState("");
+
+    function filterResults(data){
+        setSearchTerm(data);
+    }
 
 
     return (
         <div>
             <Header />
 
-            <div className="search">
-                <input type = "text" name = "searchTerm" placeholder = "Search..." onChange={filterResult}/>
-            </div>
+            <Search handleChange={filterResults}/>
 
-
-            {NotesData.filter(noteData => noteData.title.toLowerCase().includes(searchTerm.toLowerCase())).map(note => 
-                <Note 
-                        key={note.id} 
-                        title={note.title} 
-                        content={note.content} />
-            )}
-
+            <Results searchTerm = {searchTerm} />
 
             <Footer />
         </div>
