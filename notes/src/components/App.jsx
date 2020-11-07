@@ -7,7 +7,9 @@ function App(){
     return (
         <div>
             <Header />
-            <Note />
+            <Note title = "Title" content = "Here goes some content" />
+            <Note title = "Title" content = "Here goes some more content" />
+            <Note title = "Title" content = "Here is yet another card" />
             <Footer />
         </div>
         )
