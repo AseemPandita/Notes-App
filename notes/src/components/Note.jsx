@@ -5,7 +5,7 @@ let content = "Content of the note goes here."
 
 function Note(){
     return (
-        <div>
+        <div className="note">
             <h1>{title}</h1>
             <p>{content}</p>
         </div>

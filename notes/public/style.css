@@ -1,4 +1,70 @@
-body, html {
+/*
+Colors : 
+        #01161E
+        #124559
+        #598392
+        #A23B72
+        #ECEBE4
+
+*/
+
+
+* {
     margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: #ECEBE4;
+}
+
+.header {
+    min-width: 100%;
+    height:70px;
+    background-color: #01161E;
+    display: block;
+}
+
+.header h1{
+    color: #ECEBE4;
+    font-size: 30px;
+    padding: 15px 0 20px 20px;
+}
+
+
+.note {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #598392;
+    box-shadow:  0 2px 5px #cccccc;
+    border-radius: 5px;
+    display: block;
+    width: 300px;
+    background-color: #eeeeee;
+}
+
+.note h1 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background-color: #ECEBE4;
+    min-width: 100%;
+    height: 50px;
+}
+
+.footer p {
+    padding: 15px 20px 15px 20px;
+    font-size: 15px;
+}
+
+.footer p {
+    color: #598392;
+    text-align: center;
+}
