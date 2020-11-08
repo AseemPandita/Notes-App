@@ -9,7 +9,7 @@ function Search(props){
 
     return(
         <div className="search">
-                <input type = "text" name = "searchTerm" placeholder = "Search..." onChange={updateSearchTerm}/>
+                <input type = "text" name = "searchTerm" placeholder = "Filter..." onChange={updateSearchTerm}/>
         </div>
     );
 }

@@ -2,7 +2,7 @@ const notes = [
     {
         id: 1,
         title: "Title 1",
-        content: "content #1"
+        content: "Dummy content"
     },
     {
         id: 2,

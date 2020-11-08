@@ -71,6 +71,22 @@ body {
     padding-bottom: 20px;
 }
 
+.note button {
+    float: right;
+    height: 30px;
+    width: 30px;
+    border: 0px;
+    cursor: pointer;
+}
+
+
+.deleteIcon {
+    color: #999999;
+}
+
+.deleteIcon:hover {
+    color: #ac1111;
+}
 
 .footer {
     position: absolute;
